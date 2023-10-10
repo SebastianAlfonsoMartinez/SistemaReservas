@@ -2,6 +2,23 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+/out
+/.idea
+/.gradle
+/build
 
 ### Eclipse ###
 .apt_generated
@@ -15,6 +32,7 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -22,10 +40,16 @@ bin/
 /nbdist/
 /.nb-gradle/
 
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+
 ### VS Code ###
 .vscode/
 
 ### Mac OS ###
+
 .DS_Store
 
 .idea/misc.xml
