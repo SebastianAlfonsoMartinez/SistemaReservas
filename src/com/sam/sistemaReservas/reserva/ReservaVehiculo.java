@@ -15,8 +15,8 @@ public class ReservaVehiculo extends Reserva implements ConfirmarReserva, Reserv
 
     @Override
     public void verDatosReserva() {
-        System.out.println("Estos son los datos de tu reserva: \n Reserva a nombre de: "+ getPersona().getNombre() + "\nNumero documento: " + getPersona().getNumeroDocumento() +
-                "\nNumero de contacto: " + getPersona().getNumeroContacto() + "\nReservaste un vehiculo de marca: " + this.marcaVehiculo );
+        System.out.println("Estos son los datos de tu reserva: "+ "\nID reserva: " + getId() + "\n Reserva a nombre de: "+ getPersona().getNombre() + "\nNumero documento: " + getPersona().getNumeroDocumento() +
+                "\nNumero de contacto: " + getPersona().getNumeroContacto() + "\nReservaste un vehiculo de marca: " + this.marcaVehiculo + "\n Fecha y hora en la que se realizo la reserva " + getFechaHoraReserva());
     }
 
 

@@ -13,8 +13,9 @@ public class ReservaVuelo extends Reserva implements  ConfirmarReserva{
 
     @Override
     public void verDatosReserva() {
-        System.out.println("Estos son los datos de tu reserva: \n Reserva a nombre de: "+ getPersona().getNombre() + "\nNumero documento: " + getPersona().getNumeroDocumento() +
-                "\nNumero de contacto: " + getPersona().getNumeroContacto() + "\nReservaste un vuelo en la aerolinea: " + this.aerolinea );
+        System.out.println("Estos son los datos de tu reserva: " + "\nID reserva :" + getId() + "\n Reserva a nombre de: "+ getPersona().getNombre() + "\nNumero documento: " + getPersona().getNumeroDocumento() +
+                "\nNumero de contacto: " + getPersona().getNumeroContacto() + "\nReservaste un vuelo en la aerolinea: " +
+                this.aerolinea + "\n Fecha y hora en la que se realizo la reserva " + getFechaHoraReserva());
     }
 
     @Override

@@ -20,6 +20,16 @@ public class Main {
         reservaVehiculo.esExclusivaLaReserva();
         reservaVehiculo.verDatosReserva();
 
+        reservaHotel.verDatosReserva();
+        reservaHotel.confirmarReserva();
+        reservaHotel.esExclusivaLaReserva();
+
+        reservaCitaMedica.verDatosReserva();
+        reservaCitaMedica.confirmarReserva();
+
+        reservaMesaRestaurante.verDatosReserva();
+        reservaMesaRestaurante.confirmarReserva();
+
 
 
 

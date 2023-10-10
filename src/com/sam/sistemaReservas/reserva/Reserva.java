@@ -3,31 +3,35 @@ package com.sam.sistemaReservas.reserva;
 import com.sam.sistemaReservas.persona.Persona;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public abstract class Reserva {
 
     private static int contadorId = 0;
     private Integer id;
-    private LocalDate fechaHoraReserva;
+    private LocalDateTime fechaHoraReserva;
 
     private Boolean estaActivaLaReserva;
     private Persona persona;
 
     public Reserva(Boolean estaActivaLaReserva, Persona persona) {
         this.id = ++contadorId;
-        this.fechaHoraReserva = LocalDate.now();
+        this.fechaHoraReserva = LocalDateTime.now();
         this.estaActivaLaReserva = estaActivaLaReserva;
         this.persona = persona;
     }
 
-    public LocalDate getFechaHoraReserva() {
+    public LocalDateTime getFechaHoraReserva() {
         return fechaHoraReserva;
     }
 
-    public void setFechaHoraReserva(LocalDate fechaHoraReserva) {
+    public void setFechaHoraReserva(LocalDateTime fechaHoraReserva) {
         this.fechaHoraReserva = fechaHoraReserva;
     }
 
+    public Integer getId() {
+        return id;
+    }
 
 
     public Persona getPersona() {
