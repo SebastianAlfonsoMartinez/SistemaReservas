@@ -10,13 +10,13 @@ public abstract class Reserva {
     private Integer id;
     private LocalDate fechaHoraReserva;
 
-    private String queEstaReservando;
+    private Boolean estaActivaLaReserva;
     private Persona persona;
 
-    public Reserva(LocalDate fechaHoraReserva, String queEstaReservando, Persona persona) {
+    public Reserva(Boolean estaActivaLaReserva, Persona persona) {
         this.id = ++contadorId;
         this.fechaHoraReserva = LocalDate.now();
-        this.queEstaReservando = queEstaReservando;
+        this.estaActivaLaReserva = estaActivaLaReserva;
         this.persona = persona;
     }
 
@@ -28,13 +28,7 @@ public abstract class Reserva {
         this.fechaHoraReserva = fechaHoraReserva;
     }
 
-    public String getQueEstaReservando() {
-        return queEstaReservando;
-    }
 
-    public void setQueEstaReservando(String queEstaReservando) {
-        this.queEstaReservando = queEstaReservando;
-    }
 
     public Persona getPersona() {
         return persona;
@@ -44,10 +38,8 @@ public abstract class Reserva {
         this.persona = persona;
     }
 
-/*    public void verDatosReserva() {
+    public abstract void verDatosReserva();
 
-        System.out.println("Estos son los datos de tu reserva: \n Reserva a nombre de: "+ getPersona().getNombre() + "\nNumero documento: " + getPersona().getNumeroDocumento() +
-                "\n " );
-    }*/
+
 
 }
