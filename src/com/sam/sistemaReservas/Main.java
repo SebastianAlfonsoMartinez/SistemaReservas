@@ -5,7 +5,7 @@ import com.sam.sistemaReservas.reserva.*;
 
 public class Main {
     public static void main(String[] args) {
-        Persona sebastian = new Persona("Sebastian", 1024558226, 315750686 );
+        Persona sebastian = new Persona("Sebastian", 1024558226, 315750688 );
         ReservaVuelo reservaVuelo = new ReservaVuelo(true, "LAN", new Persona("Sebastian", 1024558226, 315750686 ));
         ReservaVehiculo reservaVehiculo = new ReservaVehiculo(true, "Mercedes", sebastian);
         ReservaHotel reservaHotel = new ReservaHotel(true, "Grand Hyatt", sebastian );
