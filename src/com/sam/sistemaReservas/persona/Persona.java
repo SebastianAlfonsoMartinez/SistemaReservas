@@ -3,10 +3,10 @@ package com.sam.sistemaReservas.persona;
 public class Persona {
 
     private String nombre;
-    private Long numeroDocumento;
+    private long numeroDocumento;
     private Integer numeroContacto;
 
-    public Persona(String nombre, Long numeroDocumento, Integer numeroContacto) {
+    public Persona(String nombre, long numeroDocumento, Integer numeroContacto) {
         this.nombre = nombre;
         this.numeroDocumento = numeroDocumento;
         this.numeroContacto = numeroContacto;
